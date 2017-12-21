@@ -5,6 +5,13 @@ Windows users tend to have trouble using heroku psql database because they canno
 
 We will start at ground zero where we make a local database, then create a heroku app, and then we will go from there.
 
+### Pre-check
+
+- Make sure that psql has been added to your path. Click here to learn how to do that. You may have to close your terminal, restart, and check the path again to make sure it was added and saved.
+- If the above was successful, then you should be able to type `psql` in git bash and it should prompt you for your password. 
+- Note that by default, psql will try to log in using the name of whichever account you are logged into. If that's the case, then you might not be able to login because the default user is postgres. You can login into psql as a different user by typing `psql -U <username>` where your username goes inbetween the <>. Typically, the default user in psql is postgres, so you will most likely be typing `psql -U postgres`. The `-U` is a quick flag that stands for username.
+- Also note that this is the password that you gave when you first installed psql. If you want to change your password then click here to learn how.
+
 
 ### Make a local psql database:
 
